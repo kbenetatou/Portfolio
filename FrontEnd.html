@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FrontEnd</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="./index.html" class="brand-name">KASSANDRA<br>BENETATOU</a>
+      <div class="job-title">
+      Design<br>Engineer
+      </div>
+  </div>
+  <div id="nav-links" class="nav-center">
+    <a href="#" class="closebtn" id="closeNav">&times;</a>
+    <a href="./about.html">About</a>
+    <a href="./projects.html" id="here">Projects</a>
+    <a href="./contact.html">Contact</a>
+    <a href="/cv.pdf" target="_blank">CV</a>
+  </div>
+  <div class="nav-right">
+      <button id="theme-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+     </button>
+     <div id="bars">
+      <span id="openNav">&#9776;</span>
+    </div>  
+  </div>
+</nav>
+    <h1 class="titleheading">Mood-Based Music Discovery Website</h1>
+
+<section class="fade-in-section">
+  <h2>Project Overview</h2>
+  <p>
+    This project is a playful website that recommends songs matching the user’s mood of the day. Inspired by my love for music and the challenge of finding the right vibe, I wanted to create a light, interactive experience that encourages users to reflect on how they feel and discover new music in a fun way. Rather than building a traditional, practical tool, the focus was on creativity and engagement.
+  </p>
+
+  <ul>
+    <li>Focus: Personalized mood-based song recommendations</li>
+    <li>Audience: Casual music listeners exploring new tracks</li>
+    <li>Goal: Deliver a fun and intuitive music discovery experience</li>
+  </ul>
+  <p><i>What I’d do differently:
+      This project was developed and deployed using <a href="https://glitch.com" target="_blank" rel="noopener noreferrer">Glitch</a> as part of the coursework requirements. While Glitch is primarily used in educational or prototyping contexts, it helped rapid development and live testing. In future projects, I would deploy using other platforms for greater scalability and performance.
+    </i></p>
+</section>
+
+<section class="fade-in-section">
+  <h2>Design & Functionality Overview</h2>
+  <ul>
+    <li>Users choose a mood or take a quiz to find their emotional state</li>
+    <li>Receive a song recommendation with options to listen on Spotify, Apple Music, or YouTube</li>
+    <li>Refresh recommendation or restart quiz for new suggestions</li>
+    <li>Share personalized song links with friends</li>
+    <li>Discovery section for browsing artists with info, popular releases, and videos</li>
+    <li>Minimal, clean design with a calming animated gradient on homepage</li>
+    <li>Color palette combines blue (calm) and orange (energy) to reflect moods</li>
+    <li>Typography balances readability and personality using Work Sans and Bebas Neue</li>
+    <li>Dynamic JavaScript loading for personalized, engaging interactions (loading messages, mood popups)</li>
+    <li>Simple quiz algorithm matches answers to moods using data attributes and tallying</li>
+    <li>Song data stored externally in JSON for better scalability</li>
+    <li>Randomized, non-repeating song selection with logic to avoid repeats on refresh</li>
+    <li>Background colors change according to mood on the song display page</li>
+  </ul>
+  <p><i>What I’d do differently:
+    Develop a fully dynamic artist discovery section and unify CSS files for easier management.</i></p>
+</section>
+
+<section class="fade-in-section">
+  <h2>Reflection & Future Improvements</h2>
+  <ul>
+    <li>Created an engaging, playful platform that invites mood-based music exploration</li>
+    <li>Limited song dataset limits variety; API integration (e.g., Spotify) would improve content depth</li>
+    <li>Future plans include user accounts to save favorites and social sharing features</li>
+    <li>Mobile compatibility needs improvement, especially for features like copy-to-clipboard</li>
+    <li>Design can be enhanced with richer visuals while maintaining minimalism</li>
+  </ul>
+  <p><i>What I’d do differently:
+    Conduct mobile-first testing earlier and gather user feedback to optimize quiz accuracy and UX.</i></p>
+</section>
+    
+    <section class="fade-in-section">
+      <h2>Project Link</h2>
+      <p><a href="https://spiffy-smooth-cycle.glitch.me/" target="_blank" rel="noopener noreferrer">https://spiffy-smooth-cycle.glitch.me/</a></p>
+    </section>
+  
+    <div class="disclaimer">
+      <p>*Disclaimer: All song recommendations, album artwork, and artist images featured on this website are the property of their respective copyright holders. This project is for educational and demonstration purposes only, and no ownership or rights are claimed. Users are directed to official platforms like Spotify, Apple Music, and YouTube to access full content legally.
+      </p>
+  </div>
+</div>
+  <footer>
+    <p>&copy; 2025 Kassandra Benetatou | Academic projects presented for portfolio purposes only.</p>
+  </footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

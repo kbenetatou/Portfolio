@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Designing for Food and Feelings</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="./index.html" class="brand-name">KASSANDRA<br>BENETATOU</a>
+      <div class="job-title">
+      Design<br>Engineer
+      </div>
+  </div>
+  <div id="nav-links" class="nav-center">
+    <a href="#" class="closebtn" id="closeNav">&times;</a>
+    <a href="./about.html">About</a>
+    <a href="./projects.html" id="here">Projects</a>
+    <a href="./contact.html">Contact</a>
+    <a href="/cv.pdf" target="_blank">CV</a>
+  </div>
+  <div class="nav-right">
+      <button id="theme-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+     </button>
+     <div id="bars">
+      <span id="openNav">&#9776;</span>
+    </div>  
+  </div>
+</nav>
+<h1 class="titleheading">Designing for Food and Feelings</h1>
+<div class="fade-in-section">
+  <h2>Why It Matters</h2>
+  <p>Most diet content promotes restriction over wellness. This platform reimagines healthy eating with mental health at its core, emphasizing user empowerment and clarity.</p> 
+<ul>
+  <li>Focus: Healthy eating + mental health</li>
+  <li>Audience: People seeking sustainable, non-triggering nutrition info</li>
+  <li>Goal: A structured, supportive, user-friendly experience</li>
+</ul>
+<p><i> 
+What I’d do differently:
+Partner earlier with mental health experts to align UX decisions with ethical guidelines.</i></p>
+</div>
+<div class="fade-in-section">
+ <h2>Research</h2>
+ <ul>
+  <li>Interviews with a psychologist, nutritionist, and health-focused student</li>
+  <li>Competitive analysis (e.g., BBC Food)</li>
+  <li>Created a domain model using Brown’s conceptual modeling framework</li>
+ </ul>
+<p><i> What I’d do differently:
+I’d prioritize involving users with varied relationships to food and mental health to better understand their unique perspectives.
+</i></p>
+</div>
+<div class="fade-in-section">
+ <h2>Structure</h2>
+ <ul>
+  <li>Hybrid card sorting of recipes and mental health content</li>
+  <li>Tree testing led to label refinements: e.g., “Cuisines” instead of “Healthy Flavors by Cuisine”</li>
+  <li>Simplified, supportive labels: “Related Recipes,” “Today’s Dinner Idea”</li>
+ </ul>
+ <p><i>What I’d do differently:
+Run more validation rounds and involve a content strategist early on.</i></p>
+</div>
+
+<div class="fade-in-section">
+  <h2>Flow</h2>
+  <ul>
+    <li>Tasks based on real user goals: finding recipes, exploring mental health topics</li>
+    <li>Flowchart included user thought bubbles for clarity</li>
+    <li>Avoided dead ends and supported both browsing and goal-based use</li>
+  </ul>
+  <p><i>What I’d do differently:
+Co-design flows with developers to ensure technical feasibility.</i></p>
+</div>
+
+<div class="fade-in-section" id="last">
+  <h2>Wireframes</h2>
+  <p>Screens included:</p>
+  <ul>
+    <li>Homepage / Main Nav</li>
+    <li>Recipe page with filters</li>
+    <li>Single Recipe View</li>
+    <li>Mental Health Subpage</li>
+  </ul>
+  <p>Refinements:</p>
+  <ul>
+    <li>Switched filters to a vertical list for usability</li>
+    <li>Adjusted navigation and labels after testing</li>
+    <li>3 users tested key tasks and gave feedback</li>
+  </ul>
+  <p><i>What I’d do differently: Test with a broader audience and validate with live prototype analytics.</i></p>
+  <div id="wireframes_container">
+    <div class="wireframeimg">
+      <img class="wireframe" src="./media/D1.png" alt="Homepage wireframe">
+      <div class="overlay">
+          <div class="overlaytext">Homepage / Main Nav</div>
+      </div>
+    </div>
+    <div class="wireframeimg">
+      <img class="wireframe" src="./media/D2.png" alt="Recipe wireframe">
+      <div class="overlay">
+          <div class="overlaytext">Main Recipe page with filters</div>
+      </div>
+    </div>
+    <div class="wireframeimg">
+      <img class="wireframe" src="./media/D3.png" alt="single page recipe wireframe">
+      <div class="overlay">
+          <div class="overlaytext">Single Recipe View</div>
+      </div>
+    </div>
+    <div class="wireframeimg">
+      <img class="wireframe" src="./media/D4.png" alt="Mental Health & Nutrition Subpage wireframe">
+      <div class="overlay">
+          <div class="overlaytext">Mental Health & Nutrition Subpage</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <footer>
+    <p>&copy; 2025 Kassandra Benetatou | Academic projects presented for portfolio purposes only.</p>
+  </footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

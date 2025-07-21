@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interaction Design</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="./index.html" class="brand-name">KASSANDRA<br>BENETATOU</a>
+        <div class="job-title">
+        Design<br>Engineer
+        </div>
+    </div>
+    <div id="nav-links" class="nav-center">
+      <a href="#" class="closebtn" id="closeNav">&times;</a>
+      <a href="./about.html">About</a>
+      <a href="./projects.html" id="here">Projects</a>
+      <a href="./contact.html">Contact</a>
+      <a href="/cv.pdf" target="_blank">CV</a>
+    </div>
+    <div class="nav-right">
+        <button id="theme-switch">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+       </button>
+       <div id="bars">
+        <span id="openNav">&#9776;</span>
+      </div>  
+    </div>
+  </nav>
+    <h1 class="titleheading">An AR Experience at the V&A’s Theatre & Performance Gallery</h1>
+      <section class="fade-in-section">
+        <h2>Opportunity & Our Goal</h2>
+        <p>While exploring the V&A Museum, we noticed that the Theatre collection on the second floor was:</p>
+        <ul>
+          <li>Under-visited compared to other areas</li>
+          <li>Lacking interactivity, despite visually rich content</li>
+        </ul>
+        <p>We saw an opportunity to engage users more deeply with costumes through AR try-on technology, storytelling, and playful interactions.</p>
+        <p>Our goal was to create an interactive AR installation that allows visitors to virtually try on theatrical costumes, act out a scene, and explore rich behind-the-scenes content — without physically handling fragile garments.</p>
+      </section>
+      
+      <section class="fade-in-section">
+        <h2>User Research</h2>
+        <p>Methods:</p>
+        <ul>
+          <li>Naturalistic observations at the V&A Theatre Gallery</li>
+          <li>User interviews (in-person and phone)</li>
+          <li>Thematic analysis using affinity mapping and empathy maps</li>
+        </ul>
+        <p>Key Findings:</p>
+        <ul>
+          <li>Visitors enjoyed the costumes but wanted more context and interactivity</li>
+          <li>Navigation within the exhibit was confusing</li>
+          <li>Concerns about hygiene discouraged physical interaction</li>
+          <li>Users responded well to visual learning and storytelling</li>
+        </ul>
+      </section>
+      
+      <section class="fade-in-section">
+        <h2>Personas</h2>
+        <ul>
+          <li><strong>Eric – Theatre Enthusiast</strong><br>Wants detailed costume history, deeper learning, and interactive ways to connect.</li>
+          <li><strong>Eleanor – Casual Museum-Goer</strong><br>Feels overwhelmed by static displays and prefers playful, visually engaging learning.</li>
+        </ul>
+      </section>
+      
+      <section class="fade-in-section">
+        <h2>Ideation & Concept Development</h2>
+        <p>We explored various ideas — including sound-based sensors and VR theatre scenes — but filtered them through criteria like inclusivity, safety, and connection to the museum context.</p>
+        <p><strong>Final concept:</strong><br>An AR Try-On Station with features like:</p>
+        <ul>
+          <li>Virtual costume fitting (e.g. Shirley Bassey’s gown)</li>
+          <li>Act-it-Out: record yourself performing a scene</li>
+          <li>Changeable backgrounds inspired by theatre & film</li>
+          <li>Costume details, videos, behind-the-scenes content</li>
+          <li>Easy sharing via email</li>
+        </ul>
+      </section>
+      
+      <section class="fade-in-section">
+        <h2>Prototype Walkthrough</h2>
+        <p>Built in Figma, the prototype simulates the experience on a life-sized screen in the museum.</p>
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Start screen with navigation help</li>
+          <li>AR scanning guidance</li>
+          <li>Virtual costume try-on</li>
+          <li>Photo capture & background swap (inspired by Snapchat filters)</li>
+          <li>Act-It-Out video creation with a countdown and script</li>
+          <li>Behind-the-scenes costume info</li>
+          <li>Email sharing of photo/video</li>
+        </ul>
+        <p><a href="YOUR_FIGMA_LINK_HERE" target="_blank" rel="noopener noreferrer">Click here for the prototype</a></p>
+      </section>
+      
+      <section class="fade-in-section" id="last">
+        <h2>Usability Testing</h2>
+        <p>What Worked:</p>
+        <ul>
+          <li>Easy-to-use, intuitive interaction</li>
+          <li>Exciting & memorable experience</li>
+          <li>Loved the photo and act-it-out features</li>
+        </ul>
+        <p>What We Improved:</p>
+        <ul>
+          <li>Made the “Start” button more visible</li>
+          <li>Clarified that photos weren’t stored (privacy concerns)</li>
+          <li>Added lighting guidance due to dim gallery space</li>
+          <li>Labeled confusing icons (e.g. “Act it out”)</li>
+        </ul>
+      </section>
+      
+  <footer>
+    <p>&copy; 2025 Kassandra Benetatou | Academic projects presented for portfolio purposes only.</p>
+  </footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

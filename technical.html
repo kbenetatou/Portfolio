@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Technical Implementation</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="./index.html" class="brand-name">KASSANDRA<br>BENETATOU</a>
+      <div class="job-title">
+      Design<br>Engineer
+      </div>
+  </div>
+  <div id="nav-links" class="nav-center">
+    <a href="#" class="closebtn" id="closeNav">&times;</a>
+    <a href="./about.html">About</a>
+    <a href="./projects.html" id="here">Projects</a>
+    <a href="./contact.html">Contact</a>
+    <a href="/cv.pdf" target="_blank">CV</a>
+  </div>
+  <div class="nav-right">
+      <button id="theme-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+     </button>
+     <div id="bars">
+      <span id="openNav">&#9776;</span>
+    </div>  
+  </div>
+</nav>
+    <h1 class="titleheading">Technical Spotlight</h1>
+    <section class="fade-in-section">
+        <h2> Behavior Pattern Detection with Viterbi</h2>
+        <p>
+          While my focus lies in user-centered design, my background in Computer Science often complements how I approach complex problems. One example is a Python-based tool I created to analyze system message bursts and detect behavioral states using the Viterbi algorithm.
+        </p>
+        <ul>
+          <li>Reads time-series data from input files to model system activity over time</li>
+          <li>Identifies transitions between “high” and “low” activity states</li>
+          <li>Uses algorithmic pattern recognition to make sense of raw message emissions</li>
+          <li>Includes customizable flags for detailed output and debugging</li>
+        </ul>
+        <p>
+          Though not user-facing, this project reflects my interest in data-driven reasoning and behavioral modeling — useful in UX for personalization, segmentation, or designing smarter interactions.
+        </p>
+        <p>
+          <a href="https://github.com/kbenetatou/Algorithms-and-Data-Structures/tree/5cff6b8be135978b93201c08fd32d326f01e3802/assignment-2024-2" target="_blank">View on GitHub →</a>
+        </p>
+      </section>
+      <section class="fade-in-section" id="last">
+        <h2>Recursive Tiling Algorithm in Python</h2>
+        <p>
+          This project explores a classic divide-and-conquer algorithm through a recursive implementation of the <strong>tromino tiling problem</strong>. The program accepts a board size of 2<sup>n</sup>×2<sup>n</sup> and visualizes how the entire board can be tiled using L-shaped trominoes — leaving one “missing” square as a hole.
+        </p>
+        <ul>
+          <li>Recursive approach that breaks the board into quadrants</li>
+          <li>Uses ASCII letters to simulate colored tiles (G, B, R, X)</li>
+          <li>Demonstrates algorithmic thinking and problem decomposition</li>
+          <li>Visual output builds intuition for geometric algorithms</li>
+        </ul>
+        <p>
+          While the project is more mathematical in nature, it reflects the logical structuring and recursion skills that continue to shape how I think about flows and patterns — both in interfaces and code.
+        </p>
+        <p>
+          <a href="https://github.com/kbenetatou/Algorithms-and-Data-Structures/tree/5cff6b8be135978b93201c08fd32d326f01e3802/assignment-2024-1%20" target="_blank">View on GitHub →</a>
+        </p>
+      </section>
+
+  <footer>
+    <p>&copy; 2025 Kassandra Benetatou | Academic projects presented for portfolio purposes only.</p>
+  </footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

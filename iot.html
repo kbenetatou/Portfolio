@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IoT Solution Design</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="./index.html" class="brand-name">KASSANDRA<br>BENETATOU</a>
+      <div class="job-title">
+      Design<br>Engineer
+      </div>
+  </div>
+  <div id="nav-links" class="nav-center">
+    <a href="#" class="closebtn" id="closeNav">&times;</a>
+    <a href="./about.html">About</a>
+    <a href="./projects.html" id="here">Projects</a>
+    <a href="./contact.html">Contact</a>
+    <a href="/cv.pdf" target="_blank">CV</a>
+  </div>
+  <div class="nav-right">
+      <button id="theme-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+     </button>
+     <div id="bars">
+      <span id="openNav">&#9776;</span>
+    </div>  
+  </div>
+</nav>
+    <h1 class="titleheading">NeuroSync: Wearable Seizure Alert Bracelet & App</h1>
+    <section class="fade-in-section">
+        <h2>Project Overview</h2>
+        <p>
+          NeuroSync is an IoT-enabled wearable bracelet paired with a mobile app designed to detect seizures and alert emergency contacts, while providing ongoing health monitoring and personalized support for epilepsy management.
+        </p>
+      </section>
+      <section class="fade-in-section">
+        <h2>Technical Implementation</h2>
+        <p>
+          The bracelet integrates multiple sensors — EDA, accelerometer, gyroscope, peripheral temperature, and heart rate — connected to an Arduino board. Data streams in real-time to a smartphone app, which analyzes signals and sends alerts if seizure activity is detected.
+        </p>
+        <ul>
+          <li>Electrodermal Activity (EDA) sensor for emotional and physiological signals</li>
+          <li>Motion sensors (accelerometer & gyroscope) to detect abnormal movements</li>
+          <li>Peripheral temperature & heart rate sensors for vital sign monitoring</li>
+          <li>Arduino-based prototype for sensor integration and data collection</li>
+          <li>Mobile app backend processes sensor data and manages alerts</li>
+        </ul>
+    
+        <figure>
+          <img src="images/neurosync-bracelet.jpg" alt="NeuroSync Bracelet Prototype with sensors connected" />
+          <figcaption>Arduino prototype with sensors connected</figcaption>
+        </figure>
+      </section>
+      <section class="fade-in-section">
+        <h2>Key Use Cases & User Interaction</h2>
+        <ul>
+          <li>Automatic seizure detection through combined sensor data</li>
+          <li>User notifications with option to cancel false alarms</li>
+          <li>Emergency contact alerts when seizures are confirmed</li>
+          <li>Health tracking and personalized management advice</li>
+        </ul>
+      </section>
+      <section class="fade-in-section">
+        <h2>Business & User Research</h2>
+        <p>
+          The project included detailed business model development, user research, and market analysis to ensure the product addresses real-world needs and delivers value to both users and stakeholders.
+        </p>
+        <ul>
+          <li>Identification of key customer segments</li>
+          <li>Validation of market needs and competitive landscape</li>
+          <li>Value proposition and revenue streams analysis</li>
+        </ul>
+      </section>    
+      <section class="fade-in-section">
+        <h2>Design Prototype & Demo</h2>
+        <p>
+          The interactive app prototype was designed in Figma to illustrate user flows and interface elements, focusing on accessibility and ease of use during emergencies.
+        </p>
+        <ul>
+          <li><a href="https://www.figma.com/proto/4GVmsBX20HGeOPLxdG7A2p/NeuroSync-prototype?node-id=230-2571&starting-point-node-id=230%3A2571&t=dW5I1XEQV3Xbujej-1" target="_blank" rel="noopener noreferrer">View Figma Prototype</a></li>
+          <li><a href="https://go.screenpal.com/watch/cZ1ojfVNHCA" target="_blank" rel="noopener noreferrer">Watch Demo Video (Patient)</a></li>
+          <li><a href="https://go.screenpal.com/watch/cZ1oj1VNHC5" target="_blank" rel="noopener noreferrer">Watch Demo Video (Doctor)</a></li>
+          <li><a href="https://go.screenpal.com/watch/cZ1ojGVNHEV" target="_blank" rel="noopener noreferrer">Watch a live demonstration of the NeuroSync Bracelet capturing heart rate data in real time.</a></li>
+
+        </ul>    
+        <!-- Example embedded demo video - replace src with your video URL -->
+        <!-- <video controls src="videos/neurosync-demo.mp4" aria-label="NeuroSync app demo video"></video> -->
+      </section>
+      
+    <section class="fade-in-section">
+        <h2>Reflection</h2>
+        <p>
+        This interdisciplinary project enhanced my skills in IoT integration, embedded systems, user-centered design, and business strategy — all essential for developing impactful tech solutions in healthcare.
+        </p>
+    </section>
+    <section class="fade-in-section">
+        <h2>Project Context & Learnings</h2>
+        <p>
+          This project was completed as part of a university course, aiming to deliver a holistic approach combining technical development, business analysis, and user-centered design.
+        </p>
+        <p>
+          If I were to develop NeuroSync in a professional business setting, I would prioritize deeper market validation, secure partnerships with healthcare providers, and implement a more scalable backend infrastructure to support real-time data processing and compliance with medical regulations.
+        </p>
+        <p>
+          Although our analysis was comprehensive for an academic project, real-world deployment would also require extensive clinical testing and regulatory approvals.
+        </p>
+      </section>
+      
+      <section class="fade-in-section" id="last">
+         <h2>Source Code & More</h2>
+            <p>
+                Due to time constraints, the Arduino implementation concentrated primarily on the heart rate sensor. While we aimed for full integration of all sensors, the available code currently covers only heart rate monitoring and is not available for sharing at this time.
+            </p>
+            <p>*Note: The Arduino-based sensor data collection and the mobile app were developed as separate components and have not yet been fully integrated. Future work would focus on creating seamless communication between the hardware and the application to enhance real-time data processing and user experience.
+            </p>
+
+        </section>
+  <footer>
+    <p>&copy; 2025 Kassandra Benetatou | Academic projects presented for portfolio purposes only.</p>
+  </footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evaluation</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="./index.html" class="brand-name">KASSANDRA<br>BENETATOU</a>
+      <div class="job-title">
+      Design<br>Engineer
+      </div>
+  </div>
+  <div id="nav-links" class="nav-center">
+    <a href="#" class="closebtn" id="closeNav">&times;</a>
+    <a href="./about.html">About</a>
+    <a href="./projects.html" id="here">Projects</a>
+    <a href="./contact.html">Contact</a>
+    <a href="/cv.pdf" target="_blank">CV</a>
+  </div>
+  <div class="nav-right">
+      <button id="theme-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+     </button>
+     <div id="bars">
+      <span id="openNav">&#9776;</span>
+    </div>  
+  </div>
+</nav>
+<h1 class="titleheading">Usability Audit and UX Redesign for a National Sports Website</h1>
+<section class="fade-in-section">
+    <h2>Understanding the Problem</h2>
+    <p>
+      National health and sports organizations often serve broad and diverse audiences, but their websites frequently fall short in usability. I conducted a UX audit and usability testing initiative to evaluate and improve a real-world example: a public-facing sports and fitness site supporting swimmers, parents, teachers, and volunteers.
+    </p>
+    <ul>
+      <li>Focus: Simplifying user journeys and homepage clarity</li>
+      <li>Audience: Parents, swimmers, aspiring coaches, volunteers</li>
+      <li>Goal: Ensure content is findable and aligned with real-world needs</li>
+    </ul>
+    <p><i>What I’d do differently:
+      Involve real users from each key group (e.g., parents, teachers) rather than relying on roleplay alone.</i></p>
+  </section>
+  
+  <section class="fade-in-section">
+    <h2>Research</h2>
+    <ul>
+      <li>Moderated usability testing with 3 participants (in-person and remote)</li>
+      <li>Used roleplay to simulate different user goals (parent, coach, swimmer)</li>
+      <li>Applied think-aloud protocol and tracked non-verbal cues</li>
+      <li>Tasked users with finding key info like lessons, events, or pool locations</li>
+    </ul>
+    <p><i>What I’d do differently:
+      Recruit more diverse participants and screen for background in fitness or education to reflect actual user base.</i></p>
+  </section>
+  
+  <section class="fade-in-section">
+    <h2>Navigation & Layout</h2>
+    <ul>
+      <li>Homepage was overwhelming and unclear — users struggled to grasp the site's purpose</li>
+      <li>Menu items were inconsistently grouped; key areas like events and volunteering were buried</li>
+      <li>Created a wireframe with simplified homepage layout, focused CTAs, and repositioned links for improved scanning</li>
+      <li>Followed principles from Nielsen’s web reading patterns (F-pattern) to reposition key content</li>
+    </ul>
+    <p><i>What I’d do differently:
+      Involve a content strategist earlier to audit and rewrite dense or redundant page content.</i></p>
+  </section>
+  
+  <section class="fade-in-section">
+    <h2>Usability Issues Discovered Through Testing</h2>
+    <ul>
+      <li>Tested real tasks like “Find a pool near you” and “Understand swimming progression stages”</li>
+      <li>PoolFinder tool was barely visible — most users failed to find it without help</li>
+      <li>Learn to Swim pages were info-heavy and not structured for quick scanning or task success</li>
+      <li>Analyzed data via affinity mapping and a rainbow spreadsheet to identify critical usability blockers</li>
+    </ul>
+    <p><i>What I’d do differently:
+      Prototype updated flows for tasks like finding a coach or accessing beginner info — then re-test with users.</i></p>
+  </section>
+  
+  <div id="wireframes_container">
+    <div class="wireframeimg">
+      <img class="wireframe" src="./media/swimengland.png" alt="Homepage wireframe">
+      <div class="overlay">
+          <div class="overlaytext">Homepage wireframe, based on results from the evaluation</div>
+      </div>
+    </div>
+    </div>
+    <div class="disclaimer">
+        <p>*Disclaimer: This project is an academic case study based on the publicly available Swim England website. It is not affiliated with, sponsored by, or endorsed by Swim England. All branding and content belong to their respective owners. The wireframe and recommendations shown here are the author’s personal work created for educational purposes.</p>
+     
+    </div>
+</div>
+
+
+
+  <footer>
+    <p>&copy; 2025 Kassandra Benetatou | Academic projects presented for portfolio purposes only.</p>
+  </footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

@@ -652,3 +652,55 @@ h1.titleheading {
     font-size: var(--font-small);
   }
 }
+@media (max-width: 500px) {
+  .whatever {
+    width: 90vw;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .wireframe,
+  .overlay {
+    width: 90vw;
+    height: auto;
+  }
+
+  .fade-in-section {
+    font-size: 18px;
+    margin: 30px 10px;
+    padding: 15px;
+  }
+
+  .text, #moretext, #image {
+    margin: 20px 10px;
+    font-size: 18px;
+  }
+
+  h1.titleheading {
+    font-size: 40px;
+  }
+
+  h2.projecttitle {
+    font-size: 30px;
+  }
+
+  p.subtitle {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .carousel-container::after {
+    display: none;
+  }
+
+  #toppicks {
+    gap: 20px;
+    padding: 10px;
+  }
+}
+

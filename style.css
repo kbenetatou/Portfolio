@@ -665,12 +665,13 @@ h1.titleheading {
     width: 340px;
     height:90px;
     margin:auto;
+    margin-top:40px;
   }
   .job-title{
     font-size: 8px;
   }
   #moretext {
-    margin-bottom: 300px;
+    margin-bottom: 250px;
   }
   .wireframe,
   .overlay {

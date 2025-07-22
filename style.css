@@ -646,6 +646,9 @@ h1.titleheading {
   .closebtn.active{
     display:grid;
   }
+  .whatever{
+
+  }
 }
 
 @media (max-width: 700px) {
@@ -659,7 +662,10 @@ h1.titleheading {
   }
   .contactlinks{
     max-width: 100%;
-    height:auto;;
+    height:auto;
+  }
+  .fade-in-section.contact{
+    max-width: 100%;
   }
   .job-title{
     font-size: 8px;

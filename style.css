@@ -706,6 +706,9 @@ h1.titleheading {
     gap: 20px;
     padding: 10px;
   }
+  .container{
+    margin-top: 200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -731,8 +734,5 @@ h1.titleheading {
     display: none; /* Disable fade effect on mobile */
   }
 }
-@media (max-width: 360px) {
-  .container{
-    margin-top: 200px;
-  }
-}
+
+

@@ -658,17 +658,11 @@ h1.titleheading {
     font-size: 10px;
   }
   .contactlinks{
-    width:400px;
-    height:200px;
+    max-width: 100%;
+    height:auto;;
   }
   .job-title{
     font-size: 8px;
-  }
-  .whatever {
-    width: 90vw;
-    height: auto;
-    font-size: 20px;
-    padding: 10px;
   }
 
   .wireframe,

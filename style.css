@@ -685,8 +685,7 @@ h1.titleheading {
     padding: 15px;
   }
 
-  .text, #moretext, #image {
-    margin: 20px 10px;
+  .text, #moretext {
     font-size: 18px;
   }
 

@@ -730,6 +730,9 @@ h1.titleheading {
   .carousel-container::after {
     display: none; /* Disable fade effect on mobile */
   }
-
 }
-
+@media (max-width: 360px) {
+  .container{
+    margin-top: 200px;
+  }
+}

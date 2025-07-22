@@ -709,7 +709,12 @@ h1.titleheading {
   .carousel-container::after {
     display: none;
   }
+  .whatever{
+    width: 250px;
+    height:200px;
+    font-size: 20px;
 
+  }
   #toppicks {
     gap: 20px;
     padding: 10px;
@@ -717,6 +722,7 @@ h1.titleheading {
   .container{
     margin-top: 200px;
   }
+
 }
 
 @media (max-width: 768px) {

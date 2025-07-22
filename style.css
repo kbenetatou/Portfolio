@@ -9,11 +9,10 @@
   --font-display: 'DM Serif Display', serif;
   --font-serif: 'Playfair Display', serif;
 
-  /* Font sizes */
-  --font-large: 1.75rem;
-  --font-medium: 1.5rem;
-  --font-regular: 1rem;
-  --font-small: 0.875rem;
+  --font-large: 28px;       /* 1.75rem * 16 */
+  --font-medium: 24px;      /* 1.5rem * 16 */
+  --font-regular: 16px;     /* 1rem * 16 */
+  --font-small: 14px;
 
   /* Spacing */
   --spacing-small: 1rem;

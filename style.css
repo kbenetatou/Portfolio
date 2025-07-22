@@ -662,7 +662,8 @@ h1.titleheading {
     height:auto;
   }
   .fade-in-section.contact{
-    max-width: 100%;
+    width: 340px;
+    height:90px;
   }
   .job-title{
     font-size: 8px;

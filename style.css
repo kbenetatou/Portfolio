@@ -654,6 +654,10 @@ h1.titleheading {
   }
 }
 @media (max-width: 500px) {
+  .bouncingball span {
+    font-size: 10px;
+  }
+
   .job-title{
     font-size: 8px;
   }

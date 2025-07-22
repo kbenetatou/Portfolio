@@ -438,7 +438,7 @@ h1.titleheading {
   box-shadow: 0 0 15px var(--color-secondary);
 }
 
-.nav.right {
+.nright {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -703,5 +703,30 @@ h1.titleheading {
     gap: 20px;
     padding: 10px;
   }
+}
+
+@media (max-width: 768px) {
+  #toppicks {
+    flex-direction: column;
+    overflow-x: visible;
+    overflow-y: visible;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .whatever {
+    max-width: 100%;  
+  }
+
+  .nright {
+    display: none; /* Hide right arrow on mobile */
+  }
+
+  .carousel-container::after {
+    display: none; /* Disable fade effect on mobile */
+  }
+
 }
 

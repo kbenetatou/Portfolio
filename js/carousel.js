@@ -1,6 +1,6 @@
 export function setupCarouselScroll() {
   const container = document.getElementById('toppicks');
-  const rightArrow = document.querySelector('.nav.right');
+  const rightArrow = document.querySelector('.nright');
   const wrapper = container?.parentElement;
 
   if (!container || !rightArrow || !wrapper) return;

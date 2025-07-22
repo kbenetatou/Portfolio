@@ -657,7 +657,10 @@ h1.titleheading {
   .bouncingball span {
     font-size: 10px;
   }
-
+  .contactlinks{
+    width:400px;
+    height:200px;
+  }
   .job-title{
     font-size: 8px;
   }

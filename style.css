@@ -9,14 +9,13 @@
   --font-display: 'DM Serif Display', serif;
   --font-serif: 'Playfair Display', serif;
 
-  --font-large: 28px;       /* 1.75rem * 16 */
-  --font-medium: 24px;      /* 1.5rem * 16 */
-  --font-regular: 16px;     /* 1rem * 16 */
+  --font-large: 28px;      
+  --font-medium: 24px;      
+  --font-regular: 16px;    
   --font-small: 14px;
 
-  /* Spacing */
-  --spacing-small: 1rem;
-  --spacing-medium: 2rem;
+  --spacing-small: 16px;    
+  --spacing-medium: 32px; 
 
   /* Shadows */
   --shadow-box: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -447,9 +446,9 @@ h1.titleheading {
   background: none;
   color: var(--color-primary);
   border: none;
-  padding: 1rem;
+  padding: 16px;
   cursor: pointer;
-  font-size: 4rem;
+  font-size: 64px;
   z-index: 10;
 }
 
@@ -623,7 +622,7 @@ h1.titleheading {
 
   .nav-right {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
   }
   #bars {
     font-size:45px;

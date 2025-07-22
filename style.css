@@ -646,9 +646,6 @@ h1.titleheading {
   .closebtn.active{
     display:grid;
   }
-  .whatever{
-
-  }
 }
 
 @media (max-width: 700px) {
@@ -670,13 +667,17 @@ h1.titleheading {
   .job-title{
     font-size: 8px;
   }
-
+  #moretext {
+    margin-bottom: 450px;
+  }
   .wireframe,
   .overlay {
     width: 90vw;
     height: auto;
   }
-
+  #image {
+    width: 80%;
+  }
   .fade-in-section {
     font-size: 18px;
     margin: 30px 10px;

@@ -1,39 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kassandra Benetatou</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
 
+  :root {
+    --ink: #0B1929;
+    --ink-2: #0F2236;
+    --slate: #8B9AAB;
+    --slate-dim: #5B6B7D;
+    --paper: #F2F4F7;
+    --signal: #3DDC84;
+    --signal-dim: rgba(61, 220, 132, 0.15);
+    --line: rgba(139, 154, 171, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'Inter', -apple-system, sans-serif;
+    min-height: 100vh;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(61, 220, 132, 0.06), transparent),
+      linear-gradient(var(--ink-2) 1px, transparent 1px),
+      linear-gradient(90deg, var(--ink-2) 1px, transparent 1px);
+    background-size: auto, 48px 48px, 48px 48px;
+    background-position: 0 0, -1px -1px, -1px -1px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 560px;
+    animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--signal);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--signal);
+    box-shadow: 0 0 0 0 var(--signal-dim);
+    animation: pulse 2.2s ease-out infinite;
+    flex-shrink: 0;
+  }
+
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(61, 220, 132, 0.5); }
+    70% { box-shadow: 0 0 0 8px rgba(61, 220, 132, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(61, 220, 132, 0); }
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 14px 0;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--slate);
+    margin: 0 0 36px 0;
+    max-width: 46ch;
+  }
+
+  .lede strong {
+    color: var(--paper);
+    font-weight: 600;
+  }
+
+  .log {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--slate-dim);
+    border-left: 2px solid var(--line);
+    padding-left: 16px;
+    margin: 0 0 36px 0;
+    line-height: 1.9;
+  }
+
+  .log .status { color: var(--signal); }
+  .log .cursor {
+    display: inline-block;
+    width: 7px;
+    height: 14px;
+    background: var(--signal);
+    margin-left: 2px;
+    vertical-align: -2px;
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  .actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+
+  .btn:focus-visible {
+    outline: 2px solid var(--signal);
+    outline-offset: 3px;
+  }
+
+  .btn-primary {
+    background: var(--signal);
+    color: var(--ink);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    background: #4FE595;
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--paper);
+    border: 1px solid var(--line);
+  }
+
+  .btn-ghost:hover {
+    border-color: var(--slate);
+    transform: translateY(-1px);
+  }
+
+  .arrow {
+    transition: transform 0.15s ease;
+  }
+
+  .btn:hover .arrow {
+    transform: translateX(2px);
+  }
+
+  footer {
+    margin-top: 44px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--slate-dim);
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
 <body>
 
-<div id="fade">
-    <div class="container">
-    <h1 class="portfolio">PORTFOLIO </h1>
-    <h2 class="name">KASSANDRA BENETATOU</h2>
-  </div>
-</div>
-  <div id="balls">
-    <a href="./about.html" class="bouncingball ball1"><span>ABOUT</span></a>
-    <a href="./projects.html" class="bouncingball ball2"><span>PROJECTS</span></a>
-    <a href="./CV.pdf" class="bouncingball ball3" target="_blank" rel="noopener noreferrer">
-      <span>CV</span>
-    </a>
-    <a href="./contact.html" class="bouncingball ball4"><span>CONTACT</span></a>
-  </div>
+  <main class="card">
+    <div class="eyebrow">
+      <span class="dot" aria-hidden="true"></span>
+      PAGE STATUS
+    </div>
 
-  
-  <footer>
-    <p>&copy; 2025 Kassandra Benetatou | Academic projects presented for portfolio purposes only.</p>
-  </footer>
+    <h1>This portfolio is being rebuilt.</h1>
 
-  <script type="module" src="./js/main.js"></script>
+    <p class="lede">
+      Kassandra has moved from <strong>UX/UI design into cybersecurity engineering</strong>,
+      and this site no longer reflects her current work. A security-focused portfolio is in progress.
+    </p>
+
+    <div class="log" aria-hidden="true">
+      <div>$ role --previous<br>&gt; UX/UI Designer, HCI</div>
+      <div>$ role --current<br>&gt; Junior Cybersecurity Engineer<span class="status"> [active]</span><span class="cursor"></span></div>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/kassandra-benetatou/" target="_blank" rel="noopener">
+        View LinkedIn <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="btn btn-ghost" href="mailto:kassandrabenetatou@gmail.com">
+        Email Kassandra
+      </a>
+    </div>
+
+    <footer>
+      kassandrabenetatou@gmail.com &middot; Athens, GR
+    </footer>
+  </main>
+
 </body>
 </html>

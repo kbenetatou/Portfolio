@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kassandra Benetatou</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Caveat:wght@600&display=swap');
 
   :root {
     --ink: #0B1929;
@@ -109,6 +109,52 @@
     font-weight: 600;
   }
 
+  .correction {
+    position: relative;
+    display: inline-block;
+  }
+
+  .correction .struck {
+    position: relative;
+  }
+
+  .correction .struck::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: 52%;
+    height: 2px;
+    background: #E8483D;
+    transform: rotate(-2deg);
+    animation: strike 0.4s ease-out 1.1s both;
+    transform-origin: left center;
+  }
+
+  @keyframes strike {
+    from { transform: rotate(-2deg) scaleX(0); }
+    to { transform: rotate(-2deg) scaleX(1); }
+  }
+
+  .correction .mark {
+    position: absolute;
+    left: 2px;
+    top: -19px;
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
+    font-weight: 600;
+    color: #E8483D;
+    white-space: nowrap;
+    transform: rotate(-6deg);
+    opacity: 0;
+    animation: write 0.5s ease-out 1.5s both;
+  }
+
+  @keyframes write {
+    from { opacity: 0; transform: rotate(-6deg) translateY(4px); }
+    to { opacity: 1; transform: rotate(-6deg) translateY(0); }
+  }
+
   .log {
     font-family: 'JetBrains Mono', monospace;
     font-size: 13px;
@@ -187,6 +233,14 @@
     transform: translateX(2px);
   }
 
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+  }
+
   footer {
     margin-top: 44px;
     font-family: 'JetBrains Mono', monospace;
@@ -207,8 +261,7 @@
     <h1>This portfolio is being rebuilt.</h1>
 
     <p class="lede">
-        Kassandra's traded UX/UI design for cybersecurity engineering.
-        Old habits die hard though, so a security-focused redesign is in the works.
+      Kassandra's traded UX/UI design for cybersecurity engineering &mdash; old habits die hard though, so a <strong>security-focused redesign</strong> is in the works.
     </p>
 
     <div class="log" aria-hidden="true">
@@ -221,7 +274,7 @@
         View LinkedIn <span class="arrow" aria-hidden="true">&rarr;</span>
       </a>
       <a class="btn btn-ghost" href="mailto:kassandrabenetatou@gmail.com">
-        Email Kassandra
+        Email <span class="correction" aria-hidden="true"><span class="struck">Kassandra</span><span class="mark">me</span></span><span class="sr-only">me</span>
       </a>
     </div>
 
